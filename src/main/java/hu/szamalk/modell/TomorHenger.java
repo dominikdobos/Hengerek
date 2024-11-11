@@ -21,6 +21,10 @@ public class TomorHenger extends MertaniHenger {
         this.fajsuly = fajsuly;
     }
 
+    public double suly() {
+        return terfogat() * fajsuly;
+    }
+
     @Override
     public String toString() {
         String os = super.toString();
