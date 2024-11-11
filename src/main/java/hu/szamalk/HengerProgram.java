@@ -40,10 +40,15 @@ public class HengerProgram {
     }
 
     public double atlagTerfogat() {
-        return 0.0;
+        double osszTerfogat = 0.0;
+        for (MertaniHenger henger : hengerek) {
+            osszTerfogat += henger.terfogat();
+        }
+        return osszTerfogat/MertaniHenger.getHengerDarab();
     }
 
     public double csovekSulya() {
+
         return 0.0;
     }
 
