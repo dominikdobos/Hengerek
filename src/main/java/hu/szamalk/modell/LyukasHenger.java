@@ -17,6 +17,18 @@ public class LyukasHenger extends TomorHenger {
     }
 
     @Override
+    public double terfogat() {
+        double eredeti = super.terfogat();
+
+        setSugar(getSugar()-falvastagsag);
+        double seged = super.terfogat();
+
+        setSugar(getSugar()+falvastagsag);
+
+        return eredeti - seged;
+    }
+
+    @Override
     public String toString() {
         String os = super.toString();
         return os + " <--- LyukasHenger{" +

@@ -27,16 +27,16 @@ public class HengerProgram {
 
         System.out.println("Hengerek átlagtérfogata: " + this.atlagTerfogat());
 
-        System.out.println("Csövek súlya:" + this.csovekSulya());
+        System.out.println("Csövek súlya: " + this.csovekSulya());
     }
 
     public HengerProgram() {
         this.hengerek = new ArrayList<>();
-        hengerek.add(new MertaniHenger(1, 1));
-        hengerek.add(new TomorHenger(1,1));
-        hengerek.add(new LyukasHenger(1,1,0.1));
-        hengerek.add(new LyukasHenger(1,1,0.5));
-        hengerek.add(new LyukasHenger(1,1,0.9));
+//        hengerek.add(new MertaniHenger(1, 1));
+//        hengerek.add(new TomorHenger(1,1));
+//        hengerek.add(new LyukasHenger(1,1,0.1));
+//        hengerek.add(new LyukasHenger(1,1,0.5));
+        hengerek.add(new LyukasHenger(1,1,0));
     }
 
     public double atlagTerfogat() {
