@@ -31,7 +31,7 @@ public class MertaniHenger {
     }
 
     public double terfogat() {
-        return 0.0;
+        return Math.pow(this.sugar,2) * Math.PI * this.magassag;
     }
 
     @Override
